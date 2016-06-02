@@ -2,8 +2,6 @@ require 'minitest/autorun'
 require '../src/string_proximity_phrase'
 
 class TestString < Minitest::Test
-
-
   #### POSITIVE CASES
 
   ##
@@ -14,7 +12,7 @@ class TestString < Minitest::Test
 
   ##
   # Test string has 'term1' and 'term2' within default distance Infinity.
-  def test_term1_term2_within_Infinity
+  def test_term1_term2_within_infinity
     assert_equal(true, 'Term1 one two three four Term2'.proximity?('term1', 'term2'))
   end
 
@@ -83,7 +81,6 @@ class TestString < Minitest::Test
   def test_phrase1_phrase2_within_3_with_punctuation_in_phrase1
     assert_equal(true, "Dr. Phrase 1 one\ntwo Phrase 2".proximity?('dr. phrase 1', 'phrase 2', 3))
   end
-
 
   #### NEGATIVE CASES
 

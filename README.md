@@ -10,7 +10,7 @@ Requires ruby.
             --distance [DISTANCE]        Distance integer > 0 (default Infinity)
         -s, --search-terms x,y           Comma Separated list of Search Terms "Continuous Delivery","Dr. Fowler"
     
-    $ ./search_locality.rb -d <directory> --search-terms "Continuous Delivery","Dr. Fowler" --distance 3
+    $ ./search_locality.rb -d <directory> --search-terms <phrase1>,<phrase2> --distance <distance>
         
     
 
