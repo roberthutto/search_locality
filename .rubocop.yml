@@ -1,0 +1,18 @@
+AllCops:
+  Include:
+    - spec/**/*
+    - .pipeline/**/*.rb
+Documentation:
+  Enabled: false
+LineLength:
+  Max: 250
+ClassLength:
+  Enabled: false
+AbcSize:
+  Enabled: false
+MethodLength:
+  Enabled: false
+CyclomaticComplexity:
+  Enabled: false
+PerceivedComplexity:
+  Enabled: false
